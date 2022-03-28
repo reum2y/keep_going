@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 
@@ -6,9 +7,9 @@ void hanoi(int n, int start, int mid, int end) {
     if (n == 1)
         cout << start << " " << end <<"\n";
     else {
-        hanoi(n - 1, start, end, mid); //1±âµÕ > 2±âµÕ
-        cout << start << " " << end << "\n"; //1±âµÕ>3±âµÕ
-        hanoi(n - 1, mid, start, end);//2±âµÕ>3±âµÕ
+        hanoi(n - 1, start, end, mid); //1ê¸°ë‘¥ > 2ê¸°ë‘¥
+        cout << start << " " << end << "\n"; //1ê¸°ë‘¥>3ê¸°ë‘¥
+        hanoi(n - 1, mid, start, end);//2ê¸°ë‘¥>3ê¸°ë‘¥
     }
 
 }
